@@ -1,40 +1,89 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stephen Paladines Latin Bistro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
 <body>
-  <header>
- <nav id="header-nav" class="navbar navbar-light">
-  <!-- Fluid not needed since website will not require a ton of info -->
-      <div class="container"> 
-        <div class="navbar-brand">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img"></div>
-          </a>
-
-          <!-- <div class="navbar-brand">
-            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
-            <p>
-              <img src="images/star-k-logo.png" alt="Kosher certification">
-              <span>Kosher Certified</span>
-            </p>
-          </div> -->
+    <header>
+        <nav id="header-nav" class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-brand d-none d-md-block d-lg-block mr-auto">
+                    <a href="index.html">
+                        <div id="logo-img"></div>
+                    </a>
+                </div>
+                <div id="header-text" class="navbar-brand mr-auto">
+                    <a href="index.html">
+                        <h1>Learning Center</h1>
+                    </a>
+                    <p>
+                        <i class="material-icons">
+                            school
+                        </i>
+                        <span>College Certified</span>
+                    </p>
+                </div>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsable-nav">
+                    <ul class="navbar-nav ml-auto" id="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" title="">
+                                <i class="material-icons d-none d-sm-block">
+                                    list_alt
+                                </i>Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" title="">
+                                <i class="material-icons d-none d-sm-block">
+                                    supervised_user_circle
+                                </i>About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" title="">
+                                <i class="material-icons d-none d-sm-block">
+                                    call
+                                </i>Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" title="">
+                                <i class="material-icons d-none d-sm-block">
+                                    shopping_cart
+                                </i>Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1309&q=80" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1531496730074-83b638c0a7ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Third slide">
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
-
-
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+    </div>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>

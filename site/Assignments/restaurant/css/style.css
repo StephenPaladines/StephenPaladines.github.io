@@ -1,22 +1,81 @@
 body {
-	font-size: 16px;
-	color: #fff;
-	background-color: #61122f; 
-	font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f3f3f3;
+    font-family: 'Oxygen', sans-serif;
 }
 
-/*.navbar-custom {
-	background-color: red;
-	color: black;
-}*/
+#header-nav {
+    background-color: #fff;
+}
 
-#header-nav{
-	background-color: #f6b319;
+#header-text {
+    margin-top: 20px;
+}
+
+#header-text i {
+	vertical-align: middle;
+	margin-right: 2px;
+	margin-left: 10px;
 }
 
 #logo-img {
-	background: url('../images/restaurant-logo.png') no-repeat;
-	width: 150px;
-	height: 150px;
-	margin: 10px 15px 10px 0;
+    background: url('../images/apple-logo-3.png') no-repeat;
+    width: 150px;
+    height: 150px;
 }
+
+#collapsable-nav a {
+	font-size: 1.8em;
+}
+
+#collapsable-nav a i {
+	font-size: 1em;
+}
+
+#nav-list{
+	margin-top: 10px;
+}
+
+#nav-list a {
+	color: #000;
+	text-align: center;
+}
+
+.navbar-brand {
+/*    padding-top: 25px;
+    height: auto;*/
+}
+
+.navbar-brand h1 {
+    color: #de2b2b;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75; 
+    font-family: 'Lora', serif;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+.navbar-brand p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+}
+.navbar-brand p span {
+	vertical-align: middle;
+}
+
+/*.nav-item {
+	outline-style: solid;
+	outline-color: black;
+	text-decoration: none;
+	margin: 2px;
+}*/

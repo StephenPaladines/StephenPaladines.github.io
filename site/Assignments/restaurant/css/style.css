@@ -5,6 +5,7 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 
+/*Header*/
 #header-nav {
     background-color: #fff;
 }
@@ -14,9 +15,9 @@ body {
 }
 
 #header-text i {
-	vertical-align: middle;
-	margin-right: 2px;
-	margin-left: 10px;
+    vertical-align: middle;
+    margin-right: 2px;
+    margin-left: 10px;
 }
 
 #logo-img {
@@ -25,57 +26,195 @@ body {
     height: 150px;
 }
 
-#collapsable-nav a {
-	font-size: 1.8em;
+#collapsable-nav {}
+
+#collapsable-nav i:hover {
+    color: red;
 }
 
 #collapsable-nav a i {
-	font-size: 1em;
+    font-size: 2em;
 }
 
-#nav-list{
-	margin-top: 10px;
+#carouselHomePage img {}
+
+#menu-title {
+    background: url('../images/course-tile.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#specials-title {
+    background: url('../images/tutor-tile.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-title,
+#specials-title,
+#map-title {
+    height: 250px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+#menu-title span,
+#specials-title span,
+#map-title span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+#menu-title:hover,
+#specials-title:hover,
+#map-title:hover {
+    box-shadow: 0 1px 5px 1px red;
+}
+
+#nav-list {
+    margin-top: 10px;
 }
 
 #nav-list a {
-	color: #000;
-	text-align: center;
+    color: #000;
+    text-align: center;
 }
 
 .navbar-brand {
-/*    padding-top: 25px;
+    /*    padding-top: 25px;
     height: auto;*/
 }
 
 .navbar-brand h1 {
     color: #de2b2b;
-    font-size: 1.5em;
+    font-size: 7vw;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 1px 1px 1px #222;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: .75; 
+    margin-right: 1px;
+    line-height: .75;
     font-family: 'Lora', serif;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-	text-decoration: none;
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+    text-decoration: none;
 }
 
 .navbar-brand p {
-	color: #000;
-	text-transform: uppercase;
-	font-size: .7em;
-	margin-top: 15px;
-}
-.navbar-brand p span {
-	vertical-align: middle;
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
 }
 
-/*.nav-item {
-	outline-style: solid;
-	outline-color: black;
-	text-decoration: none;
-	margin: 2px;
-}*/
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+/*Footer*/
+.card-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+    color: #fff;
+}
+
+.card-footer div.row {
+    margin-bottom: 35px;
+}
+
+.card-footer hr {}
+
+#hours,
+#address {
+    line-height: 2;
+}
+
+#hours>span,
+#address>span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #557C3E;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+    margin-top: 25px;
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    .card-footer section {
+        /*margin-bottom: 30px;*/
+        text-align: center;
+    }
+
+    .card-footer span {
+        border-bottom: 1px solid white;
+        padding-bottom: 2px;
+    }
+
+    .card-footer hr {
+        border: 1px solid white;
+        color: red;
+    }
+
+    #collapsable-nav a {
+        border: 2px solid #3F0C1F;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-size: 1.2em;
+    }
+
+    .nav-item:nth-child(1) {
+        border-top: 2px solid #3F0C1F;
+    }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    ...
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    ...
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #header-text h1 {
+        font-size: 2em;
+    }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #header-text h1 {
+        font-size: 2em;
+    }
+}
